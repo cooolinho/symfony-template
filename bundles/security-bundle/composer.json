@@ -1,7 +1,7 @@
 {
   "name": "cooolinho/security-bundle",
   "license": "GPL-2.0-only",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "symfony-bundle",
   "description": "test reusable bundle",
   "minimum-stability": "dev",

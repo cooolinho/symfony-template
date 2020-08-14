@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "05383fa4824ce9dd2d180a550c582f63",
+    "content-hash": "244c4df91003821ceb8b26b543ba1e82",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -136,11 +136,11 @@
         },
         {
             "name": "cooolinho/security-bundle",
-            "version": "0.0.2",
+            "version": "0.0.3",
             "dist": {
                 "type": "path",
                 "url": "../bundles/security-bundle",
-                "reference": "47a7c022c658d3b14f86a6c64face123061fc7aa"
+                "reference": "fe43f4106cb9185417cac9b65705236bbdd21ece"
             },
             "require": {
                 "ext-ctype": "*",
