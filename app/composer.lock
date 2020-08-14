@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "54a897f79cad4f962e74413b7322c906",
+    "content-hash": "ee40607f5064bc217ecb755106614d19",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -84,6 +84,44 @@
                 "GPL-2.0-only"
             ],
             "description": "Cool and reusable bundle"
+        },
+        {
+            "name": "cooolinho/ui-bundle",
+            "version": "0.0.1",
+            "dist": {
+                "type": "path",
+                "url": "../bundles/ui-bundle",
+                "reference": "5d3d45716d10c7083ff0763374cd287cb5a816f1"
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-iconv": "*",
+                "php": "^7.2.5",
+                "sensio/framework-extra-bundle": "^5.1",
+                "symfony/flex": "^1.3.1",
+                "symfony/framework-bundle": "5.1.*",
+                "symfony/translation": "5.1.*",
+                "symfony/twig-bundle": "5.1.*",
+                "symfony/yaml": "5.1.*"
+            },
+            "require-dev": {
+                "roave/security-advisories": "dev-master"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Cooolinho\\UiBundle\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Cooolinho\\UiBundle\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "GPL-2.0-only"
+            ],
+            "description": "test reusable bundle"
         },
         {
             "name": "doctrine/annotations",
@@ -5909,6 +5947,59 @@
                 "push"
             ],
             "time": "2020-05-28T08:20:44+00:00"
+        },
+        {
+            "name": "symfony/webpack-encore-bundle",
+            "version": "v1.7.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/webpack-encore-bundle.git",
+                "reference": "5c0f659eceae87271cce54bbdfb05ed8ec9007bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/webpack-encore-bundle/zipball/5c0f659eceae87271cce54bbdfb05ed8ec9007bd",
+                "reference": "5c0f659eceae87271cce54bbdfb05ed8ec9007bd",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/asset": "^3.4 || ^4.0 || ^5.0",
+                "symfony/config": "^3.4 || ^4.0 || ^5.0",
+                "symfony/dependency-injection": "^3.4 || ^4.0 || ^5.0",
+                "symfony/http-kernel": "^3.4 || ^4.0 || ^5.0",
+                "symfony/service-contracts": "^1.0 || ^2.0"
+            },
+            "require-dev": {
+                "symfony/framework-bundle": "^3.4 || ^4.0 || ^5.0",
+                "symfony/phpunit-bridge": "^4.3.5 || ^5.0",
+                "symfony/twig-bundle": "^3.4 || ^4.0 || ^5.0",
+                "symfony/web-link": "^3.4 || ^4.0 || ^5.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "thanks": {
+                    "name": "symfony/webpack-encore",
+                    "url": "https://github.com/symfony/webpack-encore"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\WebpackEncoreBundle\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Integration with your Symfony app & Webpack Encore!",
+            "time": "2020-01-31T15:31:59+00:00"
         },
         {
             "name": "symfony/yaml",

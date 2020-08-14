@@ -1,0 +1,27 @@
+{% set container = container|default('container-fluid') %}
+
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    {% block stylesheets %}{% endblock %}
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<!-- BODY -->
+{% block body %}
+    <main class="{{ container }}">
+        {% block main %}
+            <h1>Hello, world!</h1>
+        {% endblock %}
+    </main>
+{% endblock %}
+
+<!-- CSS -->
+{% block javascripts %}{% endblock %}
+</body>
+</html>
