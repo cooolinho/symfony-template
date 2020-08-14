@@ -8,6 +8,8 @@ use Cooolinho\SecurityBundle\DependencyInjection\CooolinhoSecurityExtension;
 
 class CooolinhoSecurityBundle extends Bundle
 {
+    public const TRANSLATION_DOMAIN = 'security';
+
     /**
      * @param ContainerBuilder $container
      */

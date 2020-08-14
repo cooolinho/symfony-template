@@ -6,7 +6,7 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "composer/package-versions-deprecated": "1.10.99.1",
-        "cooolinho/security-bundle": "^0.0.1",
+        "cooolinho/security-bundle": "^0.0.2",
         "cooolinho/ui-bundle": "^0.0.1",
         "doctrine/annotations": "^1.0",
         "doctrine/doctrine-bundle": "^2.1",

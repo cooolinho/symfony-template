@@ -16,4 +16,5 @@ return [
     Cooolinho\UiBundle\CooolinhoUiBundle::class => ['all' => true],
     Cooolinho\SecurityBundle\CooolinhoSecurityBundle::class => ['all' => true],
     Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle::class => ['dev' => true, 'test' => true],
+    SymfonyCasts\Bundle\ResetPassword\SymfonyCastsResetPasswordBundle::class => ['all' => true],
 ];

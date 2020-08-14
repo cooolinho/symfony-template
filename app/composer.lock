@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "49ca2231ae5e611bd31c86843e4c665a",
+    "content-hash": "fdeda3fef9eec7d80bbed3b210681cff",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -63,11 +63,11 @@
         },
         {
             "name": "cooolinho/security-bundle",
-            "version": "0.0.1",
+            "version": "0.0.2",
             "dist": {
                 "type": "path",
                 "url": "../bundles/security-bundle",
-                "reference": "4cad1b3386d7b711fa57816e0105a2061d6b68cf"
+                "reference": "47a7c022c658d3b14f86a6c64face123061fc7aa"
             },
             "require": {
                 "ext-ctype": "*",
@@ -79,9 +79,11 @@
                 "symfony/security-bundle": "5.1.*",
                 "symfony/translation": "5.1.*",
                 "symfony/twig-bundle": "5.1.*",
-                "symfony/yaml": "5.1.*"
+                "symfony/yaml": "5.1.*",
+                "symfonycasts/reset-password-bundle": "^1.1"
             },
             "require-dev": {
+                "doctrine/doctrine-fixtures-bundle": "^3.3",
                 "roave/security-advisories": "dev-master"
             },
             "type": "symfony-bundle",
@@ -6254,6 +6256,52 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2020-05-20T17:43:50+00:00"
+        },
+        {
+            "name": "symfonycasts/reset-password-bundle",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SymfonyCasts/reset-password-bundle.git",
+                "reference": "ac39892a5de861209cb7491e056a77a0b872e87d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SymfonyCasts/reset-password-bundle/zipball/ac39892a5de861209cb7491e056a77a0b872e87d",
+                "reference": "ac39892a5de861209cb7491e056a77a0b872e87d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2",
+                "symfony/config": "^4.4 | ^5.0",
+                "symfony/dependency-injection": "^4.4 | ^5.0",
+                "symfony/http-kernel": "^4.4 | ^5.0"
+            },
+            "conflict": {
+                "doctrine/orm": "<2.7",
+                "symfony/framework-bundle": "<4.4",
+                "symfony/http-foundation": "<4.4"
+            },
+            "require-dev": {
+                "doctrine/doctrine-bundle": "^2.0.3",
+                "doctrine/orm": "^2.7",
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "symfony/framework-bundle": "^4.4 | ^5.0",
+                "symfony/phpunit-bridge": "^5.0",
+                "vimeo/psalm": "^3.8"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "SymfonyCasts\\Bundle\\ResetPassword\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Symfony bundle that adds password reset functionality.",
+            "time": "2020-04-18T00:37:02+00:00"
         },
         {
             "name": "twig/extra-bundle",
