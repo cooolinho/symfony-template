@@ -2,6 +2,9 @@
     "composer/package-versions-deprecated": {
         "version": "1.10.99.1"
     },
+    "cooolinho/security-bundle": {
+        "version": "0.0.1"
+    },
     "cooolinho/ui-bundle": {
         "version": "0.0.1"
     },
