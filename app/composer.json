@@ -6,7 +6,7 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "cooolinho/core-bundle": "^0.0.1",
-        "cooolinho/security-bundle": "^0.0.3",
+        "cooolinho/security-bundle": "^0.0.1",
         "cooolinho/ui-bundle": "^0.0.1"
     },
     "config": {
