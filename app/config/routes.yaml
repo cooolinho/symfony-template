@@ -1,3 +1,0 @@
-app_security:
-    resource: '../vendor/cooolinho/security-bundle/src/Controller/'
-    type: annotation

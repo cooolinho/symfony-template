@@ -1,0 +1,36 @@
+---
+ip: "192.168.56.56"
+memory: 2048
+cpus: 2
+provider: virtualbox
+name: mein_tsv
+authorize: ~\.ssh\id_rsa.pub
+
+keys:
+    - ~\.ssh\id_rsa
+
+folders:
+    - map: C:\Users\deepe\Projekte
+      to: /home/vagrant/mein-tsv
+
+sites:
+    - map: mein-tsv.test
+      to: /home/vagrant/mein-tsv/symfony/public
+
+databases:
+    - mein-tsv
+
+features:
+    - mysql: true
+    - mariadb: false
+    - postgresql: false
+    - ohmyzsh: false
+    - webdriver: false
+
+services:
+    - enabled:
+          - "mysql"
+
+ports:
+    - send: 33060 # MySQL/MariaDB
+      to: 3306
