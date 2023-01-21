@@ -39,6 +39,13 @@ composer run php-cs-fixer
 composer run tools 
 ```
 
+## Custom Branches
+Checkout custom branches
+### EasyAdmin
+[Documentation (easycorp/easyadmin-bundle)](https://symfony.com/bundles/EasyAdminBundle/current/index.html)
+```
+git checkout with/easyadmin
+```
 
 ## Requirements
 - Vagrant 2.3.4
