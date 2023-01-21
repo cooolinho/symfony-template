@@ -3,22 +3,22 @@ ip: "192.168.56.56"
 memory: 2048
 cpus: 2
 provider: virtualbox
-name: mein_tsv
+name: "symfony-template"
 authorize: ~\.ssh\id_rsa.pub
 
 keys:
     - ~\.ssh\id_rsa
 
 folders:
-    - map: C:\Users\deepe\Projekte
-      to: /home/vagrant/mein-tsv
+    - map: C:\Users\cooolinho\projects\symfony-template
+      to: /home/vagrant/symfony-template
 
 sites:
-    - map: mein-tsv.test
-      to: /home/vagrant/mein-tsv/symfony/public
+    - map: symfony-template.test
+      to: /home/vagrant/symfony-template/symfony/public
 
 databases:
-    - mein-tsv
+    - symfony-template
 
 features:
     - mysql: true

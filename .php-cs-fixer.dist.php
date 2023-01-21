@@ -1,12 +1,20 @@
 <?php
 
 $finder = PhpCsFixer\Finder::create()
-    ->in(__DIR__ . 'symfony/src')
-    ->in(__DIR__ . 'bundles/*/src');
+    ->ignoreDotFiles(false)
+    ->ignoreVCSIgnored(true)
+    ->in(__DIR__ . '/symfony/src');
 
-$config = new PhpCsFixer\Config();
-return $config->setRules([
+return (new PhpCsFixer\Config())->setRules([
+    '@PHP71Migration' => true,
+    '@PHPUnit75Migration:risky' => true,
     '@Symfony' => true,
-    'full_opening_tag' => false,
+    '@Symfony:risky' => true,
+    'protected_to_private' => false,
+    'native_constant_invocation' => ['strict' => false],
+    'nullable_type_declaration_for_default_null_value' => ['use_nullable_type_declaration' => false],
+    'no_superfluous_phpdoc_tags' => ['remove_inheritdoc' => true],
+    'modernize_strpos' => true,
+    'get_class_to_class_keyword' => true,
 ])
     ->setFinder($finder);

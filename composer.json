@@ -1,5 +1,17 @@
 {
+    "name": "cooolinho/symfony-template",
+    "type": "project",
+    "license": "proprietary",
     "require": {
         "laravel/homestead": "^14.1"
+    },
+    "scripts" : {
+        "phpcs": "./tools/vendor/bin/phpcs",
+        "phpcbf": "./tools/vendor/bin/phpcbf",
+        "php-cs-fixer": "./tools/vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php --allow-risky=yes",
+        "tools" : {
+            "php-cs-fixer": "@php-cs-fixer",
+            "phpcs": "@phpcbf symfony/src"
+        }
     }
 }
