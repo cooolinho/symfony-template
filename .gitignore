@@ -1,4 +1,8 @@
+# Directories
 /.idea/
 /.vagrant/
 /vendor/
+
+# Files
 /Homestead.yaml
+/docker/logs/**/*.log

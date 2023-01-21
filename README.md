@@ -1,17 +1,42 @@
 # Symfony Template
 
 ## Installation
-### 1. run commands on local machine
+## Start with Docker
+### 1. Installation
+```
+docker-compose build
+docker-compose up -d
+```
+### 2. Install node_modules/
+```
+# Run Terminal in service "php"
+
+cd /var/www/symfony
+yarn install
+yarn run dev
+```
+## Start with Vagrant
+### 1. Installation
 ```
 composer install
 vagrant up
-vagrant ssh
 ```
-### 2. run commands in vagrant box
+### 2. Install node_modules/
 ```
+# on vagrant via $vagrant ssh
+
 cd /home/vagrant/symfony/template/symfony
 yarn install
 yarn run dev
+```
+
+### Change Database Host in ``symfony/.env`` File
+```
+# old
+DATABASE_URL="mysql://homestead:secret@db/symfony-template?serverVersion=5.7"
+
+# new
+DATABASE_URL="mysql://homestead:secret@127.0.0.1:3306/symfony-template?serverVersion=5.7"
 ```
 
 ## symfony/var Directory
