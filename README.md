@@ -75,5 +75,5 @@ git checkout with/easyadmin
 ## Requirements
 - Vagrant 2.3.4
 - VirtualBox 6.1
-- PHP 8.1.10
-- Composer 2.2.1
+- PHP 8.1.20
+- Composer 2.6.5
